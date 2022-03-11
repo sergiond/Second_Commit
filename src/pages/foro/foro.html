@@ -5,11 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OpenBootcamp - foro</title>
+    
     <link rel="stylesheet" href="/src/styles/dist/output.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
 </head>
-<body class="bg-gray-50">
-    <div>
-        <div class="flex items-center gap-4 mt-5 px-24">
+<body class="font-sans bg-gray-50">
+    <div class="h-screen w-11/12">
+        <!--Cabecera-->
+        <div class="flex items-center gap-4 mt-3 ml-5">
             <div class="flex-none w-6 h-6">
                 <svg viewBox="0 0 30 35" xmlns="http://www.w3.org/2000/svg" class="css-3vreaw">
                     <ellipse cx="11.5563" cy="11.5375" rx="11.5563" ry="11.5375" fill="#0BF082"></ellipse>
@@ -21,15 +36,15 @@
                         fill="#0DC0CB"></path>
                 </svg>
             </div>
-            <div class="flex-none">
-                <span>OpenBootcamp</span>
+            <div class="flex-none text-xl font-bold">
+                OpenBootcamp
             </div>
-            <div class="flex-1"></div>
+            <div class="flex-1 invisible">Sergio Núñez Díaz</div>
             <div class="flex items-center gap-4 ">
                 <div class="relative block">
                     
-                        <label class="absolute inset-y-0 left-0 flex items-center pl-2">
-                            <svg class="h-5 w-5 fill-gray-400" viewBox="0 0 20 20">
+                        <label class="absolute inset-y-0 left-0 flex items-center pl-2 pt-2">
+                            <svg class="w-5 h-5 fill-gray-400" viewBox="0 0 20 20">
                                 <path fill-rule="evenodd"
                                     d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
                                     clip-rule="evenodd"></path>
@@ -39,35 +54,870 @@
                             placeholder="Buscar" />
                     
                 </div>
-                  <div class="relative block">
+                  <div class="relative block dropdown">
                       
-                      <button class="flex items-center w-40 bg-white rounded-2xl text-black">
-                        <span class="relative h-8 w-8 flex items-center bg-black text-gray-600 p-1.5 rounded-full">SN</span>
-                        <span class="relative ml-3 ">UserName</span>
-                        <span class="absolute w-4 h-5 ml-32 ">
+                      <button class=" inline-flex items-center w-40 text-black bg-white rounded-2xl" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                        <div class="relative h-8 w-8 flex items-center bg-black text-gray-600 p-1.5 rounded-full">NA</div>
+                        <div class="relative ml-3 ">UserName</div>
+                       <div class="absolute w-5 h-5 ml-32 ">
                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" focusable="false"
                                 class="fill-gray-400" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
                             </svg>
-                        </span>
+                        </div>
                         
                       </button>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <a href="#" class="dropdown-item" type="button">Configuración</a>
+                            <a href="#" class="dropdown-item" type="button">Cerrar Sesión</a>
+                        </div>
                       
                   </div>
             </div>
         </div>
 
+     <!--Cuerpo-->  
 
 
-        
-        <div>
-            <div>
+<div class="relative p-4 ml-5 col ">
+    <div class="flex gap-4 text-sm leading-6 text-center text-black rounded-lg tracking-wider">
+        <div class="flex-initial p-4 divide-y rounded-lg w-96">
+            <div class="inline-flex mb-2 text-base font-medium">
+                Página principal
+                
+            </div>
+            <div class="flex flex-col space-y-2 ">
+                <div class="relative inline-flex mt-2">
+                    <div class="relative top-0 left-0">
+                        Cursos
+                    </div>
+
+                    <a href="#" class="absolute top-0 right-0">
+                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" focusable="false"
+                            class="w-6 fill-gray-400 " xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="relative inline-flex">
+                    <ul class="w-full text-base font-medium">
+                        <li>
+                            <a href="#" class="flex items-center p-0.5 hover:bg-slate-200 hover:rounded-md">
+                                <div>
+                                    <img class="w-7 h-7" src="../../static/media/Angular.svg"/>
+                                </div>
+                                <div class="ml-5">
+                                    Angular
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center p-0.5 hover:bg-slate-200 hover:rounded-md">
+                                <div>
+                                    <img class="w-7 h-7" src="../../static/media/ReactJS.svg" />
+                                </div>
+                                <div class="ml-5">
+                                    ReactJS
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center p-0.5 hover:bg-slate-200 hover:rounded-md">
+                                <div>
+                                    <img class="w-7 h-7" src="../../static/media/Spring.svg" />
+                                </div>
+                                <div class="ml-5">
+                                    Spring
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center p-0.5 hover:bg-slate-200 hover:rounded-md">
+                                <div>
+                                    <img class="w-7 h-7" src="../../static/media/JavaScript.svg" />
+                                </div>
+                                <div class="ml-5">
+                                    Javascript
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center p-0.5 hover:bg-slate-200 hover:rounded-md">
+                                <div>
+                                    <img class="w-7 h-7" src="../../static/media/Git.svg" />
+                                </div>
+                                <div class="ml-5">
+                                    Git
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="flex items-center p-0.5 hover:bg-slate-200 hover:rounded-md">
+                                <div class="ml-1">
+                                    <img class="w-5 h-5" src="../../static/media/azure-2.svg" />
+                                </div>
+                                <div class="ml-12">
+                                    Azure
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="flex-initial w-10/12 p-4 h-52">
+
+
+            <!--Información cursos-->
+
+            <div class="relative w-full h-52 rounded-xl bg-gradient-to-r from-red-600 via-rose-700 to-rose-900">
+                <div class="absolute inset-x-0 bottom-0 w-full h-36 bg-white rounded-md">
+                    <div class="absolute w-20 h-20 bg-white border-4 left-5 -top-8 rounded-3xl border-zinc-300 ">
+                        <div class="w-20 h-20">
+                            <img class="absolute inset-0" src="../../static/media/Angular.svg" />
+                        </div>
+                    </div>
+                    <div class="relative w-full top-4 ">
+                        <div class="flex-none mb-4">
+                            <div class="flex">
+                                <div class="flex-none text-xl font-bold basis-1/4 ">
+                                    Angular
+                                </div>
+                                <div class="flex-auto"> </div>
+                                
+                                <div class="flex-none gap-2 mr-5 basis-1/10">
+                                    <button class="px-6 py-1 font-medium rounded-lg bg-slate-200 active:border-emeral-500 text-gray-400 hover:text-emerald-500 focus:text-emerald-500 focus:outline-none" >Siguiendo</button>
+                                </div>
+                            </div>
+                            
+
+                            <hr class="flex-none w-[97%] mx-auto mt-4 border-solid border-slate-200">
+
+
+
+                            <div class="flex items-center">
+                                <div class="flex-auto basis-5/6 ">
+                                    <div class="relative block ml-3 ">
+                                        <label class="absolute inset-y-0 left-0 flex pl-2 pt-2">
+                                            <svg class="w-5 h-5 fill-gray-400" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd"
+                                                    d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                                                    clip-rule="evenodd"></path>
+                                            </svg>
+                                        </label>
+                                        <input class="block w-full pl-10 pr-3 py-1 bg-slate-200 placeholder:text-gray-400 border rounded-lg"
+                                            placeholder="Buscar temas" />
+                                    
+                                    </div>
+                                </div>
+                            
+                                <div class="dropdown flex-auto ">
+                                    <button class=" dropdown-toggle px-6 py-1 font-medium rounded-lg bg-slate-200" type="button" id="dropdownOrder" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false">
+                                        Ordenar por
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownOrder">
+                                        <a class="dropdown-item" href="#">Actualización</a>
+                                        <a class="dropdown-item" href="#">Número de páginas</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </div>
 
             </div>
-            <div>
+            <!--Grid-->
+            <div class="relative mt-4 pb-10">
+                <div class="grid grid-cols-5 gap-3">
+                    <div class="flex ">
+                        <a href="#" class="relative w-full h-52 rounded-2xl shadow-sm border-gray-200  bg-white text-white "> 
+                            <div class="px-6 py-4 flex bg-gradient-to-r rounded-t-2xl from-emerald-400  to-teal-500 ">
+                                <div class="shrink-0 items-center space-x-4">
+                                    <div class="flex-none rounded-full w-10 h-10 bg-teal-500 items-center ">
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" focusable="false"
+                                            class="w-8 h-8 m-auto pt-2"  xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7 7h10v2H7zm0 4h7v2H7z"></path>
+                                            <path
+                                                d="M20 2H4c-1.103 0-2 .897-2 2v18l5.333-4H20c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm0 14H6.667L4 18V4h16v12z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="relative" >
+                                    <div class="absolute inset-0 px-3 text-xl font-medium mt-1">General</div>
+                                </div>
+                                
+                            </div>
+                            <div class="absolute w-full h-3/5 inset-x-0 bottom-0 hover:bg-gray-200 rounded-b-2xl">
+                                <div class="absolute px-4 pt-3 text-black text-base font-bold text-left">
+                                    Dudas generales
+                                </div>
+                                <div class="absolute bottom-0 p-4 text-gray-300 font-bold">
+                                    <div class="relative block ">
+                                        <div class="flex items-center">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" focusable="false"
+                                                class="w-4 h-4" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5 18v3.766l1.515-.909L11.277 18H16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h1zM4 8h12v8h-5.277L7 18.234V16H4V8z">
+                                                </path>
+                                                <path d="M20 2H8c-1.103 0-2 .897-2 2h12c1.103 0 2 .897 2 2v8c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2z">
+                                                </path>
+                                            </svg>
+                                            <div class="inline-flex pl-2 ">
+                                                12K preguntas
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                            
+                        </a>
+                    </div>
+
+                    <div class="flex ">
+                        <a href="#" class="relative w-full h-52 rounded-2xl shadow-sm border-gray-200  bg-white text-white "> 
+                            <div class="px-6 py-4 flex bg-gradient-to-r rounded-t-2xl from-red-400  to-rose-800 ">
+                                <div class="shrink-0 items-center space-x-4">
+                                    <div class="flex-none rounded-full w-10 h-10 bg-[#b21e5a] items-center ">
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" focusable="false"
+                                            class="w-8 h-8 m-auto pt-2" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.001 10h2v5h-2zM11 16h2v2h-2z"></path>
+                                            <path
+                                                d="M13.768 4.2C13.42 3.545 12.742 3.138 12 3.138s-1.42.407-1.768 1.063L2.894 18.064a1.986 1.986 0 0 0 .054 1.968A1.984 1.984 0 0 0 4.661 21h14.678c.708 0 1.349-.362 1.714-.968a1.989 1.989 0 0 0 .054-1.968L13.768 4.2zM4.661 19 12 5.137 19.344 19H4.661z">
+                                            </path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="relative" >
+                                    <div class="absolute inset-0 px-3 text-xl font-medium mt-1">Errores</div>
+                                </div>
+                                
+                            </div>
+                            <div class="absolute w-full h-3/5 inset-x-0 bottom-0 hover:bg-gray-200 rounded-b-2xl">
+                                <div class="absolute px-4 pt-3 text-black text-base font-bold text-left ">
+                                    Errores
+                                </div>
+                                <div class="absolute bottom-0 p-4 text-gray-300 font-bold">
+                                    <div class="relative block ">
+                                        <div class="flex items-center">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" focusable="false"
+                                                class="w-4 h-4" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5 18v3.766l1.515-.909L11.277 18H16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h1zM4 8h12v8h-5.277L7 18.234V16H4V8z">
+                                                </path>
+                                                <path d="M20 2H8c-1.103 0-2 .897-2 2h12c1.103 0 2 .897 2 2v8c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2z">
+                                                </path>
+                                            </svg>
+                                            <div class="inline-flex pl-2 ">
+                                                432 preguntas
+                                            </div>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                            
+                        </a>
+                    </div>
+                    <div class="flex ">
+                        <a href="#" class="relative w-full h-52 rounded-2xl shadow-sm border-gray-200  bg-white text-white ">
+                            <div class="px-6 py-4 flex bg-gradient-to-r rounded-t-2xl from-[#2838b6] to-[#3966db] ">
+                                <div class="shrink-0 items-center space-x-4">
+                                    <div class="flex-none rounded-full w-10 h-10 bg-[#1b2382] items-center ">
+
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" focusable="false"
+                                            class="w-8 h-8 m-auto pt-2" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M20 3H4a2 2 0 0 0-2 2v2a2 2 0 0 0 1 1.72V19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8.72A2 2 0 0 0 22 7V5a2 2 0 0 0-2-2zM4 5h16v2H4zm1 14V9h14v10z">
+                                            </path>
+                                            <path d="M8 11h8v2H8z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="relative">
+                                    <div class="absolute inset-0 px-3 text-xl font-medium mt-1">Proyectos</div>
+                                </div>
+                    
+                            </div>
+                            <div class="absolute w-full h-3/5 inset-x-0 bottom-0 hover:bg-gray-200 rounded-b-2xl">
+                                <div class="absolute px-4 pt-3 text-black text-base font-bold text-left">
+                                    Proyectos
+                                </div>
+                                <div class="absolute bottom-0 p-4 text-gray-300 font-bold">
+                                    <div class="relative block ">
+                                        <div class="flex items-center">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" focusable="false"
+                                                class="w-4 h-4" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5 18v3.766l1.515-.909L11.277 18H16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h1zM4 8h12v8h-5.277L7 18.234V16H4V8z">
+                                                </path>
+                                                <path d="M20 2H8c-1.103 0-2 .897-2 2h12c1.103 0 2 .897 2 2v8c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2z">
+                                                </path>
+                                            </svg>
+                                            <div class="inline-flex pl-2 ">
+                                                543 preguntas
+                                            </div>
+                                
+                                
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                    
+                        </a>
+                    </div>
+                    <div class="flex ">
+                        <a href="#" class="relative w-full h-52 rounded-2xl shadow-sm border-gray-200  bg-white text-white hover:no-underline "> 
+                            <div class="px-6 py-4 flex bg-gradient-to-r rounded-t-2xl bg-[#040F36] ">
+                                <div class="shrink-0 items-center space-x-4">
+                                    <div class="flex-none rounded-full w-10 h-10 bg-[#0a2c45] items-center ">
+                                        <div class="w-8 h-8 m-auto font-semibold text-3xl text-[#27d59e]">
+                                            1
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="relative col" >
+                                    <div class="absolute text-xl font-medium mt-1">Módulo 1</div>
+                                </div>
+                                
+                            </div>
+                            <div class="absolute w-full h-3/5 inset-x-0 bottom-0 hover:bg-gray-200 rounded-b-2xl">
+                                <div class="absolute px-4 pt-3 text-black text-base font-bold text-left">
+                                    Aprendiendo a utilizar el Framework
+                                </div>
+                                <div class="absolute bottom-0 p-4 text-gray-300 font-bold">
+                                    <div class="relative block ">
+                                        <div class="flex items-center">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" focusable="false" class="w-4 h-4"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5 18v3.766l1.515-.909L11.277 18H16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h1zM4 8h12v8h-5.277L7 18.234V16H4V8z">
+                                                </path>
+                                                <path d="M20 2H8c-1.103 0-2 .897-2 2h12c1.103 0 2 .897 2 2v8c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2z"></path>
+                                            </svg>
+                                            <div class="inline-flex pl-2 ">
+                                                34 preguntas
+                                            </div>
+                                            
+
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                        </a>
+                    </div>
+                    <div class="flex ">
+                        <a href="#"
+                            class="relative w-full h-52 rounded-2xl shadow-sm border-gray-200  bg-white text-white hover:no-underline ">
+                            <div class="px-6 py-4 flex bg-gradient-to-r rounded-t-2xl bg-[#040F36] ">
+                                <div class="shrink-0 items-center space-x-4">
+                                    <div class="flex-none rounded-full w-10 h-10 bg-[#0a2c45] items-center ">
+                                        <div class="w-8 h-8 m-auto font-semibold text-3xl text-[#27d59e]">
+                                            2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="relative col">
+                                    <div class="absolute text-xl font-medium mt-1">Módulo 2</div>
+                                </div>
+                    
+                            </div>
+                            <div class="absolute w-full h-3/5 inset-x-0 bottom-0 hover:bg-gray-200 rounded-b-2xl">
+                                <div class="absolute px-4 pt-3 text-black text-base font-bold text-left">
+                                    Utilizando funciones
+                                </div>
+                                <div class="absolute bottom-0 p-4 text-gray-300 font-bold">
+                                    <div class="relative block ">
+                                        <div class="flex items-center">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                                focusable="false" class="w-4 h-4" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5 18v3.766l1.515-.909L11.277 18H16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h1zM4 8h12v8h-5.277L7 18.234V16H4V8z">
+                                                </path>
+                                                <path
+                                                    d="M20 2H8c-1.103 0-2 .897-2 2h12c1.103 0 2 .897 2 2v8c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2z">
+                                                </path>
+                                            </svg>
+                                            <div class="inline-flex pl-2 ">
+                                                27 preguntas
+                                            </div>
+                    
+                    
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                        </a>
+                    </div>
+                    <div class="flex ">
+                        <a href="#"
+                            class="relative w-full h-52 rounded-2xl shadow-sm border-gray-200  bg-white text-white hover:no-underline ">
+                            <div class="px-6 py-4 flex bg-gradient-to-r rounded-t-2xl bg-[#040F36] ">
+                                <div class="shrink-0 items-center space-x-4">
+                                    <div class="flex-none rounded-full w-10 h-10 bg-[#0a2c45] items-center ">
+                                        <div class="w-8 h-8 m-auto font-semibold text-3xl text-[#27d59e]">
+                                            2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="relative col">
+                                    <div class="absolute text-xl font-medium mt-1">Módulo 3</div>
+                                </div>
+                    
+                            </div>
+                            <div class="absolute w-full h-3/5 inset-x-0 bottom-0 hover:bg-gray-200 rounded-b-2xl">
+                                <div class="absolute px-4 pt-3 text-black text-base font-bold text-left">
+                                    Programando tu primer proyecto
+                                </div>
+                                <div class="absolute bottom-0 p-4 text-gray-300 font-bold">
+                                    <div class="relative block ">
+                                        <div class="flex items-center">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                                focusable="false" class="w-4 h-4" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5 18v3.766l1.515-.909L11.277 18H16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h1zM4 8h12v8h-5.277L7 18.234V16H4V8z">
+                                                </path>
+                                                <path
+                                                    d="M20 2H8c-1.103 0-2 .897-2 2h12c1.103 0 2 .897 2 2v8c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2z">
+                                                </path>
+                                            </svg>
+                                            <div class="inline-flex pl-2 ">
+                                                164 preguntas
+                                            </div>
+                    
+                    
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                        </a>
+                    </div>
+                    <div class="flex ">
+                        <a href="#"
+                            class="relative w-full h-52 rounded-2xl shadow-sm border-gray-200  bg-white text-white hover:no-underline ">
+                            <div class="px-6 py-4 flex bg-gradient-to-r rounded-t-2xl bg-[#040F36] ">
+                                <div class="shrink-0 items-center space-x-4">
+                                    <div class="flex-none rounded-full w-10 h-10 bg-[#0a2c45] items-center ">
+                                        <div class="w-8 h-8 m-auto font-semibold text-3xl text-[#27d59e]">
+                                            2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="relative col">
+                                    <div class="absolute text-xl font-medium mt-1">Módulo 4</div>
+                                </div>
+                    
+                            </div>
+                            <div class="absolute w-full h-3/5 inset-x-0 bottom-0 hover:bg-gray-200 rounded-b-2xl">
+                                <div class="absolute px-4 pt-3 text-black text-base font-bold text-left">
+                                    Subida de archivos
+                                </div>
+                                <div class="absolute bottom-0 p-4 text-gray-300 font-bold">
+                                    <div class="relative block ">
+                                        <div class="flex items-center">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                                focusable="false" class="w-4 h-4" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5 18v3.766l1.515-.909L11.277 18H16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h1zM4 8h12v8h-5.277L7 18.234V16H4V8z">
+                                                </path>
+                                                <path
+                                                    d="M20 2H8c-1.103 0-2 .897-2 2h12c1.103 0 2 .897 2 2v8c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2z">
+                                                </path>
+                                            </svg>
+                                            <div class="inline-flex pl-2 ">
+                                                254 preguntas
+                                            </div>
+                    
+                    
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                        </a>
+                    </div>
+                    <div class="flex ">
+                        <a href="#"
+                            class="relative w-full h-52 rounded-2xl shadow-sm border-gray-200  bg-white text-white hover:no-underline ">
+                            <div class="px-6 py-4 flex bg-gradient-to-r rounded-t-2xl bg-[#040F36] ">
+                                <div class="shrink-0 items-center space-x-4">
+                                    <div class="flex-none rounded-full w-10 h-10 bg-[#0a2c45] items-center ">
+                                        <div class="w-8 h-8 m-auto font-semibold text-3xl text-[#27d59e]">
+                                            2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="relative col">
+                                    <div class="absolute text-xl font-medium mt-1">Módulo 5</div>
+                                </div>
+                    
+                            </div>
+                            <div class="absolute w-full h-3/5 inset-x-0 bottom-0 hover:bg-gray-200 rounded-b-2xl">
+                                <div class="absolute px-4 pt-3 text-black text-base font-bold text-left">
+                                    Aplicando estilos
+                                </div>
+                                <div class="absolute bottom-0 p-4 text-gray-300 font-bold">
+                                    <div class="relative block ">
+                                        <div class="flex items-center">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                                focusable="false" class="w-4 h-4" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5 18v3.766l1.515-.909L11.277 18H16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h1zM4 8h12v8h-5.277L7 18.234V16H4V8z">
+                                                </path>
+                                                <path
+                                                    d="M20 2H8c-1.103 0-2 .897-2 2h12c1.103 0 2 .897 2 2v8c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2z">
+                                                </path>
+                                            </svg>
+                                            <div class="inline-flex pl-2 ">
+                                                642 preguntas
+                                            </div>
+                    
+                    
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                        </a>
+                    </div>
+                    <div class="flex ">
+                        <a href="#"
+                            class="relative w-full h-52 rounded-2xl shadow-sm border-gray-200  bg-white text-white hover:no-underline ">
+                            <div class="px-6 py-4 flex bg-gradient-to-r rounded-t-2xl bg-[#040F36] ">
+                                <div class="shrink-0 items-center space-x-4">
+                                    <div class="flex-none rounded-full w-10 h-10 bg-[#0a2c45] items-center ">
+                                        <div class="w-8 h-8 m-auto font-semibold text-3xl text-[#27d59e]">
+                                            2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="relative col">
+                                    <div class="absolute text-xl font-medium mt-1">Módulo 6</div>
+                                </div>
+                    
+                            </div>
+                            <div class="absolute w-full h-3/5 inset-x-0 bottom-0 hover:bg-gray-200 rounded-b-2xl">
+                                <div class="absolute px-4 pt-3 text-black text-base font-bold text-left">
+                                    Aprendiendo a utilizar el framework
+                                </div>
+                                <div class="absolute bottom-0 p-4 text-gray-300 font-bold">
+                                    <div class="relative block ">
+                                        <div class="flex items-center">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                                focusable="false" class="w-4 h-4" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5 18v3.766l1.515-.909L11.277 18H16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h1zM4 8h12v8h-5.277L7 18.234V16H4V8z">
+                                                </path>
+                                                <path
+                                                    d="M20 2H8c-1.103 0-2 .897-2 2h12c1.103 0 2 .897 2 2v8c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2z">
+                                                </path>
+                                            </svg>
+                                            <div class="inline-flex pl-2 ">
+                                                27 preguntas
+                                            </div>
+                    
+                    
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                        </a>
+                    </div>
+                    <div class="flex ">
+                        <a href="#"
+                            class="relative w-full h-52 rounded-2xl shadow-sm border-gray-200  bg-white text-white hover:no-underline ">
+                            <div class="px-6 py-4 flex bg-gradient-to-r rounded-t-2xl bg-[#040F36] ">
+                                <div class="shrink-0 items-center space-x-4">
+                                    <div class="flex-none rounded-full w-10 h-10 bg-[#0a2c45] items-center ">
+                                        <div class="w-8 h-8 m-auto font-semibold text-3xl text-[#27d59e]">
+                                            2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="relative col">
+                                    <div class="absolute text-xl font-medium mt-1">Módulo 7</div>
+                                </div>
+                    
+                            </div>
+                            <div class="absolute w-full h-3/5 inset-x-0 bottom-0 hover:bg-gray-200 rounded-b-2xl">
+                                <div class="absolute px-4 pt-3 text-black text-base font-bold text-left">
+                                    Utilizando funciones
+                                </div>
+                                <div class="absolute bottom-0 p-4 text-gray-300 font-bold">
+                                    <div class="relative block ">
+                                        <div class="flex items-center">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                                focusable="false" class="w-4 h-4" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5 18v3.766l1.515-.909L11.277 18H16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h1zM4 8h12v8h-5.277L7 18.234V16H4V8z">
+                                                </path>
+                                                <path
+                                                    d="M20 2H8c-1.103 0-2 .897-2 2h12c1.103 0 2 .897 2 2v8c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2z">
+                                                </path>
+                                            </svg>
+                                            <div class="inline-flex pl-2 ">
+                                                27 preguntas
+                                            </div>
+                    
+                    
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                        </a>
+                    </div>
+                    <div class="flex ">
+                        <a href="#"
+                            class="relative w-full h-52 rounded-2xl shadow-sm border-gray-200  bg-white text-white hover:no-underline ">
+                            <div class="px-6 py-4 flex bg-gradient-to-r rounded-t-2xl bg-[#040F36] ">
+                                <div class="shrink-0 items-center space-x-4">
+                                    <div class="flex-none rounded-full w-10 h-10 bg-[#0a2c45] items-center ">
+                                        <div class="w-8 h-8 m-auto font-semibold text-3xl text-[#27d59e]">
+                                            2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="relative col">
+                                    <div class="absolute text-xl font-medium mt-1">Módulo 8</div>
+                                </div>
+                    
+                            </div>
+                            <div class="absolute w-full h-3/5 inset-x-0 bottom-0 hover:bg-gray-200 rounded-b-2xl">
+                                <div class="absolute px-4 pt-3 text-black text-base font-bold text-left">
+                                    Aprendiendo a utilizar el framework
+                                </div>
+                                <div class="absolute bottom-0 p-4 text-gray-300 font-bold">
+                                    <div class="relative block ">
+                                        <div class="flex items-center">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                                focusable="false" class="w-4 h-4" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5 18v3.766l1.515-.909L11.277 18H16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h1zM4 8h12v8h-5.277L7 18.234V16H4V8z">
+                                                </path>
+                                                <path
+                                                    d="M20 2H8c-1.103 0-2 .897-2 2h12c1.103 0 2 .897 2 2v8c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2z">
+                                                </path>
+                                            </svg>
+                                            <div class="inline-flex pl-2 ">
+                                                27 preguntas
+                                            </div>
+                    
+                    
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                        </a>
+                    </div>
+                    <div class="flex ">
+                        <a href="#"
+                            class="relative w-full h-52 rounded-2xl shadow-sm border-gray-200  bg-white text-white hover:no-underline ">
+                            <div class="px-6 py-4 flex bg-gradient-to-r rounded-t-2xl bg-[#040F36] ">
+                                <div class="shrink-0 items-center space-x-4">
+                                    <div class="flex-none rounded-full w-10 h-10 bg-[#0a2c45] items-center ">
+                                        <div class="w-8 h-8 m-auto font-semibold text-3xl text-[#27d59e]">
+                                            2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="relative col">
+                                    <div class="absolute text-xl font-medium mt-1">Módulo 9</div>
+                                </div>
+                    
+                            </div>
+                            <div class="absolute w-full h-3/5 inset-x-0 bottom-0 hover:bg-gray-200 rounded-b-2xl">
+                                <div class="absolute px-4 pt-3 text-black text-base font-bold text-left">
+                                    Aprendiendo a utilizar el framework
+                                </div>
+                                <div class="absolute bottom-0 p-4 text-gray-300 font-bold">
+                                    <div class="relative block ">
+                                        <div class="flex items-center">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                                focusable="false" class="w-4 h-4" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5 18v3.766l1.515-.909L11.277 18H16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h1zM4 8h12v8h-5.277L7 18.234V16H4V8z">
+                                                </path>
+                                                <path
+                                                    d="M20 2H8c-1.103 0-2 .897-2 2h12c1.103 0 2 .897 2 2v8c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2z">
+                                                </path>
+                                            </svg>
+                                            <div class="inline-flex pl-2 ">
+                                                27 preguntas
+                                            </div>
+                    
+                    
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                        </a>
+                    </div>
+                    <div class="flex ">
+                        <a href="#"
+                            class="relative w-full h-52 rounded-2xl shadow-sm border-gray-200  bg-white text-white hover:no-underline ">
+                            <div class="px-6 py-4 flex bg-gradient-to-r rounded-t-2xl bg-[#040F36] ">
+                                <div class="shrink-0 items-center space-x-4">
+                                    <div class="flex-none rounded-full w-10 h-10 bg-[#0a2c45] items-center ">
+                                        <div class="w-8 h-8 m-auto font-semibold text-3xl text-[#27d59e]">
+                                            2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="relative col">
+                                    <div class="absolute text-xl font-medium mt-1">Módulo 10</div>
+                                </div>
+                    
+                            </div>
+                            <div class="absolute w-full h-3/5 inset-x-0 bottom-0 hover:bg-gray-200 rounded-b-2xl">
+                                <div class="absolute px-4 pt-3 text-black text-base font-bold text-left">
+                                    Aprendiendo a utilizar el framework
+                                </div>
+                                <div class="absolute bottom-0 p-4 text-gray-300 font-bold">
+                                    <div class="relative block ">
+                                        <div class="flex items-center">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                                focusable="false" class="w-4 h-4" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5 18v3.766l1.515-.909L11.277 18H16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h1zM4 8h12v8h-5.277L7 18.234V16H4V8z">
+                                                </path>
+                                                <path
+                                                    d="M20 2H8c-1.103 0-2 .897-2 2h12c1.103 0 2 .897 2 2v8c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2z">
+                                                </path>
+                                            </svg>
+                                            <div class="inline-flex pl-2 ">
+                                                27 preguntas
+                                            </div>
+                    
+                    
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                        </a>
+                    </div>
+                    <div class="flex ">
+                        <a href="#"
+                            class="relative w-full h-52 rounded-2xl shadow-sm border-gray-200  bg-white text-white hover:no-underline ">
+                            <div class="px-6 py-4 flex bg-gradient-to-r rounded-t-2xl bg-[#040F36] ">
+                                <div class="shrink-0 items-center space-x-4">
+                                    <div class="flex-none rounded-full w-10 h-10 bg-[#0a2c45] items-center ">
+                                        <div class="w-8 h-8 m-auto font-semibold text-3xl text-[#27d59e]">
+                                            2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="relative col">
+                                    <div class="absolute text-xl font-medium mt-1">Módulo 11</div>
+                                </div>
+                    
+                            </div>
+                            <div class="absolute w-full h-3/5 inset-x-0 bottom-0 hover:bg-gray-200 rounded-b-2xl">
+                                <div class="absolute px-4 pt-3 text-black text-base font-bold text-left">
+                                    Aprendiendo a utilizar el framework
+                                </div>
+                                <div class="absolute bottom-0 p-4 text-gray-300 font-bold">
+                                    <div class="relative block ">
+                                        <div class="flex items-center">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                                focusable="false" class="w-4 h-4" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5 18v3.766l1.515-.909L11.277 18H16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h1zM4 8h12v8h-5.277L7 18.234V16H4V8z">
+                                                </path>
+                                                <path
+                                                    d="M20 2H8c-1.103 0-2 .897-2 2h12c1.103 0 2 .897 2 2v8c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2z">
+                                                </path>
+                                            </svg>
+                                            <div class="inline-flex pl-2 ">
+                                                27 preguntas
+                                            </div>
+                    
+                    
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                        </a>
+                    </div>
+                    <div class="flex ">
+                        <a href="#"
+                            class="relative w-full h-52 rounded-2xl shadow-sm border-gray-200  bg-white text-white hover:no-underline ">
+                            <div class="px-6 py-4 flex bg-gradient-to-r rounded-t-2xl bg-[#040F36] ">
+                                <div class="shrink-0 items-center space-x-4">
+                                    <div class="flex-none rounded-full w-10 h-10 bg-[#0a2c45] items-center ">
+                                        <div class="w-8 h-8 m-auto font-semibold text-3xl text-[#27d59e]">
+                                            2
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="relative col">
+                                    <div class="absolute text-xl font-medium mt-1">Módulo 12</div>
+                                </div>
+                    
+                            </div>
+                            <div class="absolute w-full h-3/5 inset-x-0 bottom-0 hover:bg-gray-200 rounded-b-2xl">
+                                <div class="absolute px-4 pt-3 text-black text-base font-bold text-left">
+                                    Utilizando funciones
+                                </div>
+                                <div class="absolute bottom-0 p-4 text-gray-300 font-bold">
+                                    <div class="relative block ">
+                                        <div class="flex items-center">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                                focusable="false" class="w-4 h-4" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M5 18v3.766l1.515-.909L11.277 18H16c1.103 0 2-.897 2-2V8c0-1.103-.897-2-2-2H4c-1.103 0-2 .897-2 2v8c0 1.103.897 2 2 2h1zM4 8h12v8h-5.277L7 18.234V16H4V8z">
+                                                </path>
+                                                <path
+                                                    d="M20 2H8c-1.103 0-2 .897-2 2h12c1.103 0 2 .897 2 2v8c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2z">
+                                                </path>
+                                            </svg>
+                                            <div class="inline-flex pl-2 ">
+                                                27 preguntas
+                                            </div>
+                    
+                    
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                    
+                        </a>
+                    </div>
+
+                </div>
 
             </div>
         </div>
+    </div>
+</div>
+        
     </div>
 </body>
 </html>
