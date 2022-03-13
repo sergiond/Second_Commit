@@ -57,7 +57,9 @@
                   <div class="relative block dropdown">
                       
                       <button class=" inline-flex items-center w-40 text-black bg-white rounded-2xl" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-                        <div class="relative h-8 w-8 flex items-center bg-black text-gray-600 p-1.5 rounded-full">NA</div>
+                        <div class="relative h-10 w-10 flex items-center text-lg font-semibold  text-[#515561] bg-[#121625] p-1.5 rounded-full">
+                            NA
+                        </div>
                         <div class="relative ml-3 ">UserName</div>
                        <div class="absolute w-5 h-5 ml-32 ">
                             <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" focusable="false"
@@ -187,7 +189,8 @@
                                 <div class="flex-auto"> </div>
                                 
                                 <div class="flex-none gap-2 mr-5 basis-1/10">
-                                    <button class="px-6 py-1 font-medium rounded-lg bg-slate-200 active:border-emeral-500 text-gray-400 hover:text-emerald-500 focus:text-emerald-500 focus:outline-none" >Siguiendo</button>
+                                    <button class="px-6 py-1 font-medium rounded-lg bg-slate-200 active:border-emeral-500 text-gray-400 hover:text-emerald-500 focus:text-emerald-500 focus:outline-none" >
+                                        Siguiendo</button>
                                 </div>
                             </div>
                             
@@ -213,9 +216,23 @@
                                 </div>
                             
                                 <div class="dropdown flex-auto ">
-                                    <button class=" dropdown-toggle px-6 py-1 font-medium rounded-lg bg-slate-200" type="button" id="dropdownOrder" data-toggle="dropdown"
-                                        aria-haspopup="true" aria-expanded="false">
-                                        Ordenar por
+                                    <button class=" px-6 py-1 font-medium rounded-lg bg-slate-200 inline-flex items-center space-x-2" type="button"
+                                        id="dropdownOrder" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div>
+                                            <svg class="w-4 h-4" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M4.00033 13.6673L7.33366 10.334H4.83366V0.333984H3.16699V10.334H0.666992L4.00033 13.6673ZM8.16699 3.66732H15.667V5.33398H8.16699V3.66732ZM8.16699 7.00065H14.0003V8.66732H8.16699V7.00065ZM8.16699 0.333984H17.3337V2.00065H8.16699V0.333984ZM8.16699 10.334H12.3337V12.0007H8.16699V10.334Z"
+                                                    fill="#121625" />
+                                            </svg>
+                                
+                                        </div>
+                                        <div>
+                                            Ordenar por
+                                        </div>
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" focusable="false"
+                                            class="w-5 h-5" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z" fill="#121625"></path>
+                                        </svg>
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownOrder">
                                         <a class="dropdown-item" href="#">Actualización</a>
